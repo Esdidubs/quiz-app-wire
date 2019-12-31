@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Video Game Quiz - Questions</title>
+    <title>Video Game Quiz - Question Feedback</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
         <h1>Video Game Quiz</h1>
         <ul>
             <li class="scores">Correct: <span id="correct">0</span></li>
-            <li class="scores">Incorrect: <span id="incorrect">0</span></li>
+            <li class="scores">Incorrect: <span id="incorrect">1</span></li>
         </ul>        
     </header>
     <main>
@@ -24,12 +24,13 @@
                 </fieldset>
                 <fieldset name="answers">
                     <legend>Answers</legend>
+                    <span class="feedback">Sorry, that is incorrect. The correct answer is in green.</span><br>
+                    <input type="radio" name="answer1"><span class="wrong"> This one</span><br>
                     <input type="radio" name="answer1"> This one<br>
-                    <input type="radio" name="answer1"> This one<br>
-                    <input type="radio" name="answer1"> This one<br>
+                    <input type="radio" name="answer1"><span class="right"> This one</span><br>
                     <input type="radio" name="answer1"> This one
                 </fieldset>
-                <button><a href="example.html">Submit</a></button>
+                <button><a href="results.html">Submit</a></button>
             </form>
         </section>
     </main>

@@ -33,3 +33,15 @@ body {
     padding: 20px;
     background-color: lightgrey;
 }
+
+.wrong {
+    color: red;
+}
+
+.right {
+    color: green;
+}
+
+.feedback {
+    font-weight: bold;
+}
